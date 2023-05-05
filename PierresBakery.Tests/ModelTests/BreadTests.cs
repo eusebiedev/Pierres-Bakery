@@ -32,6 +32,11 @@ namespace PierresBakery.Tests
     {
       Assert.AreEqual(15, Bread.BreadOrder(4));
     }
+    [TestMethod]
+    public void BreadOrder_TotalForFiveBread_LoafCost()
+    {
+      Assert.AreEqual(20, Bread.BreadOrder(5));
+    }
 
   }
 }
