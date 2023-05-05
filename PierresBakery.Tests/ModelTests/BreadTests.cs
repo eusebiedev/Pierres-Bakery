@@ -13,10 +13,9 @@ namespace PierresBakery.Tests
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     [TestMethod]
-    public void BreadOrder_TotalForOneBread_Bread()
+    public void BreadOrder_TotalForOneBread_LoafCost()
     {
-      int loafOrder = 1;
-      Assert.AreEqual(5, Bread.LoafCost(loafOrder));
+      Assert.AreEqual(5, Bread.BreadOrder(1));
     }
 
   }
