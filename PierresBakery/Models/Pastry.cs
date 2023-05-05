@@ -34,6 +34,10 @@ namespace PierresBakery.Models
       {
         PastrySubTotal = (pastryOrder * PastryCost) - (Discount);
       }
+      else if (pastryOrder == 7)
+      {
+        PastrySubTotal = (pastryOrder * PastryCost) - (Discount);
+      }
 
 
       return PastrySubTotal;
