@@ -23,7 +23,13 @@ namespace PierresBakery.Models
         SubTotal = (loafOrder * LoafCost) - (Discount);
       }
       else if (loafOrder == 4)
+      {
         SubTotal = (loafOrder * LoafCost) - (Discount);
+      }
+      else if (loafOrder == 5)
+      {
+        SubTotal = (loafOrder * LoafCost) - (Discount);
+      }
       return SubTotal;
     }
   }
