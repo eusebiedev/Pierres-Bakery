@@ -43,6 +43,12 @@ namespace PierresBakery.Tests
       Assert.AreEqual(8, Pastry.PastryOrder(5));
     }
 
+    [TestMethod]
+    public void PastryOrder_TotalForSixPastryDiscount_PastryCost()
+    {
+      Assert.AreEqual(10, Pastry.PastryOrder(6));
+    }
+
 
 
   }
