@@ -2,7 +2,7 @@
 
 #### By _**Eusebie Siebenberg**_
 
-#### _A school project showcasing C# and MSTesting building a console application_
+#### _A school project showcasing C# and MSTEST building a console application_
 
 ## Technologies Used
 
