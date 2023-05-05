@@ -19,9 +19,16 @@ _Pierre's Bakery is a console based application which invites the user to choose
 ## Setup/Installation Requirements
 
 * _Clone repository_
-* _Open your command line app of choice and navigate to the Pierres Bakery directory_
+* _Open your command line app of choice and navigate to the PierresBakery directory_
 * _Run $ `dotnet build` to build the project_
-* _Run $ `dotnet build` to start the program_
+* _Run $ `dotnet run` to start the program_
+
+## To Run MSTEST
+
+* _Clone repository_
+* _Open your command line app of choice and navigate to the PierresBakery.Tests directory_
+* _Run $ `dotnet restore` to build the project_
+* _Run $ `dotnet test` to run through the supplied test for each model_
 
 
 ## Known Bugs
