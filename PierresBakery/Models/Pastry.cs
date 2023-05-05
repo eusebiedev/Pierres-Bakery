@@ -9,12 +9,16 @@ namespace PierresBakery.Models
     { 
       int PastryCost = 2;
       int PastrySubTotal = 0;
-      // int Discount = 2;
+      int Discount = 2;
       if (pastryOrder == 1)
       {
         PastrySubTotal = (pastryOrder * PastryCost);
       }
       else if (pastryOrder == 2)
+      {
+        PastrySubTotal = (pastryOrder * PastryCost);
+      }
+      else if (pastryOrder == 3)
       {
         PastrySubTotal = (pastryOrder * PastryCost);
       }
