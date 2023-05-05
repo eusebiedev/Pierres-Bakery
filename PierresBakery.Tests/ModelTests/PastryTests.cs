@@ -14,9 +14,15 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void PastryOrder_TotalForOnePastry_LoafCost()
+    public void PastryOrder_TotalForOnePastry_PastryCost()
     {
       Assert.AreEqual(2, Pastry.PastryOrder(1));
+    }
+    
+    [TestMethod]
+    public void PastryOrder_TotalForTwoPastry_PastryCost()
+    {
+      Assert.AreEqual(4, Pastry.PastryOrder(2));
     }
 
 
