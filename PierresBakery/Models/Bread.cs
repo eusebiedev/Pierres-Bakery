@@ -4,16 +4,20 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    // public int LoafCost { get; set; }
+    public int LoafCost { get; set; }
     public static int BreadOrder(int loafOrder)
-    {
-      int BreadOrder = 1;
-      int Total = 5;
-      if (BreadOrder == 3)
+    { 
+      int LoafCost = 5;
+      int SubTotal = 0;
+      // int Discount = 0;
+      if (loafOrder  == 1)
       {
-        
+        SubTotal = (loafOrder * LoafCost);
       }
-      return Total;
+      else if (loafOrder == 2)
+        SubTotal = (loafOrder * LoafCost);
+      
+      return SubTotal;
     }
   }
 }
