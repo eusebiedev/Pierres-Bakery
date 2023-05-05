@@ -14,12 +14,16 @@ namespace PierresBakery.Models
       {
         SubTotal = (loafOrder * LoafCost);
       }
-      if (loafOrder == 2)
-        SubTotal = (loafOrder * LoafCost);
+      else if (loafOrder == 2)
       {
-      if (loafOrder == 3)
+        SubTotal = (loafOrder * LoafCost);
+      }
+      else if (loafOrder == 3)
+      {
         SubTotal = (loafOrder * LoafCost) - (Discount);
       }
+      else if (loafOrder == 4)
+        SubTotal = (loafOrder * LoafCost) - (Discount);
       return SubTotal;
     }
   }
