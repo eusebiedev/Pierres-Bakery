@@ -28,9 +28,9 @@ _Pierre's Bakery is a console based application which invites the user to choose
 * _Run $ `dotnet test` to run through the supplied test for each model_
 
 
-## Known Bugs
+## Known Bugs as of 5/5/2023
 
-* _Any known issues_
+* _UI doesn't calculate total cost as _
 
 ## [MIT](https://opensource.org/license/mit/) License
 
