@@ -42,10 +42,10 @@ namespace PierresBakery.Models
       {
         PastrySubTotal = (pastryOrder * PastryCost) - (Discount * 2);
       }
-      else
-      {
-        PastrySubTotal = 999; // Required closing else for c#
-      }
+      // else
+      // {
+      //   
+      // }
       return PastrySubTotal;
     }
   }
