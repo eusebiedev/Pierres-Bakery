@@ -30,7 +30,7 @@ _Pierre's Bakery is a console based application which invites the user to choose
 
 ## Known Bugs as of 5/5/2023
 
-* _UI doesn't calculate total cost as _
+* _UI doesn't calculate total cost_
 
 ## [MIT](https://opensource.org/license/mit/) License
 
