@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace PierresBakery.Models
@@ -42,10 +43,14 @@ namespace PierresBakery.Models
       {
         PastrySubTotal = (pastryOrder * PastryCost) - (Discount * 2);
       }
-      // else
-      // {
-      //   
-      // }
+      else if (pastryOrder >= 4)
+      {
+        PastrySubTotal = (pastryOrder * PastryCost) - (Discount * 2);
+      }
+      else
+      {
+        PastrySubTotal = 0;//Not sure what to close on "else"
+      }
       return PastrySubTotal;
     }
   }
