@@ -18,17 +18,17 @@ namespace PierresBakery
       int Bread = int.Parse(Console.ReadLine());
       Console.WriteLine("How many fine Pastries can we get you?");
       int Pastry = int.Parse(Console.ReadLine());
-      int orderTotal = Bread + Pastry;
-      Console.WriteLine("Thanks so much, your Order for {Bread} Bread & {Pastry} Pastries comes to: $ ${orderTotal} ");
+      Bread newBread = new Bread();
+      Pastry newPastry = new Pastry();
+      int orderTotal = OrderTally(Bread, Pastry);
+      Console.WriteLine("========**========**========**========**======*");
+      Console.WriteLine($"Thanks so much, your Order for {Bread} Bread & {Pastry} Pastries comes to: ${orderTotal}");
     }
+
+    public static int OrderTally(int loafOrder, int pastryOrder)
+    {
+      int combineOrders = ((Bread.BreadOrder(loafOrder)) + (Pastry.PastryOrder( pastryOrder)));
+      return combineOrders;
+    } 
   }
-
-
-
-
-
-
-
-
-
 }
