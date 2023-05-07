@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace PierresBakery.Models
@@ -42,11 +43,12 @@ namespace PierresBakery.Models
       {
         SubTotal = (loafOrder * LoafCost) - (Discount * 2);
       }
-      // else
-      // {
-      //   
-      // }
+      else
+      {
+        SubTotal = 0; //Not sure what to close on "else"
+      }
       return SubTotal;
-    }
+    } 
   }
 }
+
