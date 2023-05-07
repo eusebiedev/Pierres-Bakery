@@ -16,52 +16,65 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void PastryOrder_TotalForOnePastry_PastryCost()
     {
-      Assert.AreEqual(2, Pastry.PastryOrder(1));
+      Pastry newPastry = new Pastry();
+      int pastryOrder = 1;
+      Assert.AreEqual(2, Pastry.PastryOrder(pastryOrder));
     }
     
     [TestMethod]
     public void PastryOrder_TotalForTwoPastry_PastryCost()
     {
-      Assert.AreEqual(4, Pastry.PastryOrder(2));
+      Pastry newPastry = new Pastry();
+      int pastryOrder = 2;
+      Assert.AreEqual(4, Pastry.PastryOrder(pastryOrder));
     }
 
     [TestMethod]
     public void PastryOrder_TotalForThreePastry_PastryCost()
     {
-      Assert.AreEqual(6, Pastry.PastryOrder(3));
+      Pastry newPastry = new Pastry();
+      int pastryOrder = 3;
+      Assert.AreEqual(6, Pastry.PastryOrder(pastryOrder));
     }
 
     [TestMethod]
     public void PastryOrder_TotalForFourPastryDiscount_PastryCost()
     {
-      Assert.AreEqual(6, Pastry.PastryOrder(4));
+      Pastry newPastry = new Pastry();
+      int pastryOrder = 4;
+      Assert.AreEqual(6, Pastry.PastryOrder(pastryOrder));
     }
 
     [TestMethod]
     public void PastryOrder_TotalForFivePastryDiscount_PastryCost()
     {
-      Assert.AreEqual(8, Pastry.PastryOrder(5));
+      Pastry newPastry = new Pastry();
+      int pastryOrder = 5;
+      Assert.AreEqual(8, Pastry.PastryOrder(pastryOrder));
     }
 
     [TestMethod]
     public void PastryOrder_TotalForSixPastryDiscount_PastryCost()
     {
-      Assert.AreEqual(10, Pastry.PastryOrder(6));
+      Pastry newPastry = new Pastry();
+      int pastryOrder = 6;
+      Assert.AreEqual(10, Pastry.PastryOrder(pastryOrder));
     }
 
     [TestMethod]
     public void PastryOrder_TotalForSevenPastryDiscount_PastryCost()
     {
-      Assert.AreEqual(12, Pastry.PastryOrder(7));
+      Pastry newPastry = new Pastry();
+      int pastryOrder = 7;
+      Assert.AreEqual(12, Pastry.PastryOrder(pastryOrder));
     }
 
     [TestMethod]
     public void PastryOrder_TotalForEightPastryDiscount_PastryCost()
     {
-      Assert.AreEqual(12, Pastry.PastryOrder(8));
+      Pastry newPastry = new Pastry();
+      int pastryOrder = 8;
+      Assert.AreEqual(12, Pastry.PastryOrder(pastryOrder));
     }
-
-
-
   }
 }
