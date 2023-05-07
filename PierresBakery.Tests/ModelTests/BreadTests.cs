@@ -68,5 +68,13 @@ namespace PierresBakery.Tests
       int loafOrder = 7;
       Assert.AreEqual(25, Bread.BreadOrder(loafOrder));
     }
+
+    [TestMethod]
+    public void BreadOrder_TotalForAnyBread_LoafCost()
+    {
+      Bread newBread = new Bread();
+      int loafOrder = 0; //final test for >=3 ?
+      Assert.AreEqual(0, Bread.BreadOrder(loafOrder));
+    }
   }
 }
