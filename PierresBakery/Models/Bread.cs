@@ -5,50 +5,20 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    public int LoafCost { get; set; }
-    public static int BreadOrder(int loafOrder)
-    { 
-      int LoafCost = 5;
-      int SubTotal = 0;
-      int Discount = 5;
-      if (loafOrder  == 1)
-      {
-        SubTotal = (loafOrder * LoafCost);
-      }
-      else if (loafOrder == 2)
-      {
-        SubTotal = (loafOrder * LoafCost);
-      }
-      else if (loafOrder == 3)
-      {
-        SubTotal = (loafOrder * LoafCost) - (Discount);
-      }
-      else if (loafOrder == 4)
-      {
-        SubTotal = (loafOrder * LoafCost) - (Discount);
-      }
-      else if (loafOrder == 5)
-      {
-        SubTotal = (loafOrder * LoafCost) - (Discount);
-      }
-      else if (loafOrder == 6)
-      { 
-      SubTotal = (loafOrder * LoafCost) - (Discount * 2);
-      }
-      else if (loafOrder == 7)
-      { 
-        SubTotal = (loafOrder * LoafCost) - (Discount * 2);
-      }
-      else if (loafOrder >= 3)
-      {
-        SubTotal = (loafOrder * LoafCost) - (Discount * 2);
-      }
-      else
-      {
-        SubTotal = 0; //Not sure what to close on "else"
-      }
-      return SubTotal;
-    } 
+    private int LoafCost { get; set; }
+    private static int NumberOfLoaves { get; set; }
+
+    public Bread(int numberOfLoaves)
+    {
+      NumberOfLoaves = numberOfLoaves;
+      LoafCost = 5;
+    }
+
+    public int CalculateTotal()
+    {
+      int discount = NumberOfLoaves/3;
+      int totalCost = (NumberOfLoaves - discount) * LoafCost;
+      return totalCost;
+    }
   }
 }
-
