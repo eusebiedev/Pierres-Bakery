@@ -54,12 +54,14 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread(6);
       Assert.AreEqual(20, newBread.CalculateTotal());
     }
+
     [TestMethod]
     public void CalculateTotal_TotalFor7Loaves_LoafCost()
     {
       Bread newBread = new Bread(7);
       Assert.AreEqual(25, newBread.CalculateTotal());
     }
+
     [TestMethod]
     public void CalculateTotal_TotalFor8Loaves_LoafCost()
     {
@@ -80,6 +82,7 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread(10);
       Assert.AreEqual(35, newBread.CalculateTotal());
     }
+    
     [TestMethod]
     public void CalculateTotal_TotalFor15Loaves_LoafCost()
     {
