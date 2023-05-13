@@ -14,8 +14,8 @@ namespace PierresBakery.Models
       PastryCost = 2;
     }
 
-      public int CalculateTotal()
-      {
+    public int CalculateTotal()
+    {
       int discount = NumberOfPastries/4;
       int totalCost = (NumberOfPastries - discount) * PastryCost;
       return totalCost;
