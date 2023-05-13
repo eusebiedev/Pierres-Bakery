@@ -5,53 +5,20 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
-    public int PastryCost { get; set; }
-    public static int PastryOrder(int pastryOrder)
-    { 
-      int PastryCost = 2;
-      int PastrySubTotal = 0;
-      int Discount = 2;
-      if (pastryOrder == 1)
+    private int PastryCost { get; set; }
+    private static int NumberOfPastries { get; set; }
+    
+    public Pastry(int numberOfPastries)
+    {
+      NumberOfPastries = numberOfPastries;
+      PastryCost = 2;
+    }
+
+      public int CalculateTotal()
       {
-        PastrySubTotal = (pastryOrder * PastryCost);
-      }
-      else if (pastryOrder == 2)
-      {
-        PastrySubTotal = (pastryOrder * PastryCost);
-      }
-      else if (pastryOrder == 3)
-      {
-        PastrySubTotal = (pastryOrder * PastryCost);
-      }
-      else if (pastryOrder == 4)
-      {
-        PastrySubTotal = (pastryOrder * PastryCost) - (Discount);
-      }
-      else if (pastryOrder == 5)
-      {
-        PastrySubTotal = (pastryOrder * PastryCost) - (Discount);
-      }
-      else if (pastryOrder == 6)
-      {
-        PastrySubTotal = (pastryOrder * PastryCost) - (Discount);
-      }
-      else if (pastryOrder == 7)
-      {
-        PastrySubTotal = (pastryOrder * PastryCost) - (Discount);
-      }
-      else if (pastryOrder == 8)
-      {
-        PastrySubTotal = (pastryOrder * PastryCost) - (Discount * 2);
-      }
-      else if (pastryOrder >= 4)
-      {
-        PastrySubTotal = (pastryOrder * PastryCost) - (Discount * 2);
-      }
-      else
-      {
-        PastrySubTotal = 0;//Not sure what to close on "else"
-      }
-      return PastrySubTotal;
+      int discount = NumberOfPastries/4;
+      int totalCost = (NumberOfPastries - discount) * PastryCost;
+      return totalCost;
     }
   }
 } 
