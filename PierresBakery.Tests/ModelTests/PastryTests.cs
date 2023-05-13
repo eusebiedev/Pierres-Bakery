@@ -6,7 +6,7 @@ namespace PierresBakery.Tests
   [TestClass]
   public class PastryTests
   {
-  [TestMethod]
+    [TestMethod]
     public void PastryConstructor_CreateInstanceOfPastry_Pastry()
     {
       Pastry newPastry = new Pastry(0);
